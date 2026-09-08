@@ -59,3 +59,22 @@ else{
     console.log("delivery is not available");
     
 }
+
+
+let rating=5
+if(rating==5){
+    console.log("excellent");
+    
+}
+else if(rating<5){
+    console.log("Very good Performance");
+    
+}
+else if(rating<3){
+    console.log("Needs Improvement");
+    
+}
+else{
+    console.log("poor");
+    
+}
