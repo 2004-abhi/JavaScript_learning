@@ -58,13 +58,18 @@
 
 // length
 
-function checkPassword(password){
-    if (password.length >= 8){
-        return "Password is strong";
-    }else {
-        return "Password must contain at least 8 characters";
-    }
-} 
-console.log(checkPassword("Java@1234"));
+// function checkPassword(password){
+//     if (password.length >= 8){
+//         return "Password is strong";
+//     }else {
+//         return "Password must contain at least 8 characters";
+//     }
+// } 
+// console.log(checkPassword("Java@1234"));
+
+
+
+
+
 
 
