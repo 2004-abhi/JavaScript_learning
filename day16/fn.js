@@ -180,4 +180,11 @@ function searchProduct(product){
     return "product not found";
   }
 }
-console.log(searchProduct("laptop"));
+console.log(searchProduct("  laptop"));
+
+
+
+
+
+
+
