@@ -19,3 +19,13 @@ console.log(fruitts)
 let fruittss=["apple","mango","orange","grape"];
 fruittss.splice(3,1,"BANNANA")
 console.log(fruittss);
+
+
+
+//reverse
+let mit=["abhijith","kailas","abin","akash"];
+console.log("brfore reverse",mit);
+mit.reverse()
+console.log("after reverse",mit);
+
+
