@@ -16,10 +16,19 @@
 // console.log(res);
 
 
-let price=[100,300,200,400,500];
-let result=price.map((element)=>{
-    return element+50;
+// let price=[100,300,200,400,500];
+// let result=price.map((element)=>{
+//     return element+50;
+// })
+// console.log("returns array",result);
+// console.log("original array",price);
+
+
+let users=["Arya","Ammu","KunjiKili","Paru"];
+let res=users.map((ele)=>{
+    return ele.toUpperCase()
+
 })
-console.log("returns array",result);
-console.log("original array",price);
+console.log("acctual is:",users);
+console.log("return array:",res);
 
