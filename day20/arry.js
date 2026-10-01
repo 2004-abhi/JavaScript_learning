@@ -24,11 +24,34 @@
 // console.log("original array",price);
 
 
-let users=["Arya","Ammu","KunjiKili","Paru"];
-let res=users.map((ele)=>{
-    return ele.toUpperCase()
+// let users=["Arya","Ammu","KunjiKili","Paru"];
+// let res=users.map((ele)=>{
+//     return ele.toUpperCase()
 
+// })
+// console.log("acctual is:",users);
+// console.log("return array:",res);
+
+
+
+// let salaries=[3000,10000,40000,30000,75000,560000];
+// let res=salaries.filter((ele)=>{
+//     return ele > 30000   // return all matching elements
+// })
+// console.log("new return array:",res);
+// console.log("using filter method:",salaries);
+
+
+// let names=["rose","anugrah","abin","arjun"];
+// let res=names.filter((ele)=>{
+//     return ele.startsWith("r")
+// })
+// console.log(res);
+
+
+let salaries=[3000,10000,40000,30000,75000,560000];
+let resu=salaries.find((ele)=>{  // return first matching element
+    return ele > 30000
 })
-console.log("acctual is:",users);
-console.log("return array:",res);
-
+console.log("new return array:",resu);
+console.log("using finding method:",salaries);
