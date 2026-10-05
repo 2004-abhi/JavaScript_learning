@@ -128,6 +128,9 @@
 // forEach()
 // runs a function once for every elements
 
+//example - 1
+let students = ["Ravi","Kiran","Suresh"];
+students.forEach(student => console.log(student));
 
 
 let users= ["ravi","kiran"];
