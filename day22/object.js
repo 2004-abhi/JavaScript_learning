@@ -98,52 +98,142 @@
 
 
 // oder details
-let order={
-    orderId:"osdccv33e2",
-    customerName:"kiran",
-    amount:2434,
-    paymentSucessful: true    ,
-    product:[
-        "t-shirt",
-        "jeans",
-        "shoes",
+// let order={
+//     orderId:"osdccv33e2",
+//     customerName:"kiran",
+//     amount:2434,
+//     paymentSucessful: true    ,
+//     product:[
+//         "t-shirt",
+//         "jeans",
+//         "shoes",
 
-    ]     ,
-    deliveryAdress:{
-        houseNo:"12-45",
-        street:"main road",
-        city:"vijajjaaha",
-        pincode:52545e666
-    } ,
-    couponApplied:false,
-    discountAmount:200,
-    deliveryCharge:50,
-    "track-id":null,
-    expectefdDevilvery:undefined,
-    "payment-metod":"upi"
+//     ]     ,
+//     deliveryAdress:{
+//         houseNo:"12-45",
+//         street:"main road",
+//         city:"vijajjaaha",
+//         pincode:52545e666
+//     } ,
+//     couponApplied:false,
+//     discountAmount:200,
+//     deliveryCharge:50,
+//     "track-id":null,
+//     expectefdDevilvery:undefined,
+//     "payment-metod":"upi"
 
-};
+// };
 
-console.log(order["payment-metod"]);
-console.log(oder);
-console.log(oder.orderId);
-console.log(oder.amount);
-console.log(order.product);
-console.log(order.deliveryAdress.city.);
-
-
+// console.log(order["payment-metod"]);
+// console.log(oder);
+// console.log(oder.orderId);
+// console.log(oder.amount);
+// console.log(order.product);
+// console.log(order.deliveryAdress.city);
 
 
 
 
+// creating object
+// let MITvictim={
+//     victim:"aby",
+//     Vid:303
+// }
+
+// console.log("details of MIT:",MITvictim);
+// console.log(MITvictim.Vid);
+// console.log(MITvictim["Vid"]);
+
+// // adding property
+// MITvictim.college="mahaguru institute";
+// console.log(MITvictim);
+
+
+// // updating properties
+// MITvictim.Vid=203;
+// console.log(MITvictim);
+
+// //deleting properties
+// delete MITvictim.college;
+// console.log(MITvictim);
+
+
+// we canot delete a object completely their  no way to delete but we store its as null
+// delete MITvictim;    
+// console.log(MITvictim);
+
+// storing as null
+// MITvicitim=null
+// console.log(MITvicitim);
+
+
+
+// seal property : it is used to seal the object we can't add or delete the data in the object but we can "update the object data"
+
+
+// let product={
+//     item:"mobile",
+//     price:1.30
+// }
+// console.log(product);
+
+// Object.seal(product)
+// product.brand="samsung s26 ultra"; // adding not possible
+// console.log(product);
+
+// product.price=55000; // update is possible
+// console.log(product);
+
+// delete product.price;
+// console.log("before deleting:",product);
+
+
+// freez property : is used to freez the values in the object we can not add , delete , update any values in the freez 
+
+
+// let product={
+//     item:"mobile",
+//     price:1.30
+// }
+// console.log(product);
+
+// Object.freeze(product)
+// product.brand="samsung s26 ultra"; // adding not possible
+// console.log(product);
+
+// product.price=55000; // updateing property is not  possible
+// console.log(product);
+
+// delete product.price;
+// console.log("before deleting:",product); // deleting is not possible
+
+
+
+// showing key , values both in the  object
+
+let product={
+    item:"mobile",
+    price:75000,
+    color:"black",
+    brand:"samsung",
+    battery:"6000mAh"
+}
+// console.log(product.keys);
+// console.log(Object.keys(product)); // showing key values like items , price
+// console.log(Object.values(product));  // showing values like black , samsung
+console.log(Object.entries(product)); // showing both key and values
 
 
 
 
-
-
-
-
-
-
-
+// map method
+ let users = ["arya","abhinand","arjun","abhi"];
+ let result=users.map((ele,ind)=>{
+    // console.log("element:",ele);
+    // console.log("index:",ind);
+    // return ele
+    return ind
+    
+    
+ })
+ console.log("result:",result);

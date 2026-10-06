@@ -49,9 +49,23 @@
 // console.log(res);
 
 
-let salaries=[3000,10000,40000,30000,75000,560000];
-let resu=salaries.find((ele)=>{  // return first matching element
-    return ele > 30000
-})
-console.log("new return array:",resu);
-console.log("using finding method:",salaries);
+// let salaries=[3000,10000,40000,30000,75000,560000];
+// let resu=salaries.find((ele)=>{  // return first matching element
+//     return ele > 30000
+// })
+// console.log("new return array:",resu);
+// console.log("using finding method:",salaries);
+
+
+// map method
+ let users = ["arya","abhinand","arjun","abhi"];
+ let result=users.map((ele,ind)=>{
+    // console.log("element:",ele);
+    // console.log("index:",ind);
+    // return ele
+    return ind
+    
+    
+ })
+ console.log("result:",result);
+ 
