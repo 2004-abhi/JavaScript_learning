@@ -268,10 +268,39 @@
 //     console.log("properties",":",noice[n]);
 // }
 
-let prices=[20,40,550,30];
-let result=prices.map((ele,ind,arr)=>{
-    console.log(ele);
+// let prices=[20,40,550,30];
+// let result=prices.map((ele,ind,arr)=>{
+//     console.log(ele);
+    
+// })
+// console.log(result); // it shows undefined  because it does not returning any values 
+
+
+
+
+let user=[{
+    name:"abu",
+    id:101
+},{
+    name:"abhi",
+    id:102
+},{
+    name:"abhiand",
+    id:104
+},{
+    name:"aby",
+    id:105
+},{
+    name:"unni",
+    id:106
+}]
+
+let result=user.map((ele)=>{
+    return ele.name;
+    // console.log(ele);
+    // console.log(ele.name);
+    
     
 })
-console.log(result); // it shows undefined  because it does not returning any values 
+console.log(result);
 
