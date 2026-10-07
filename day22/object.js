@@ -211,29 +211,67 @@
 
 // showing key , values both in the  object
 
-let product={
-    item:"mobile",
-    price:75000,
-    color:"black",
-    brand:"samsung",
-    battery:"6000mAh"
-}
+// let product={
+//     item:"mobile",
+//     price:75000,
+//     color:"black",
+//     brand:"samsung",
+//     battery:"6000mAh"
+// }
 // console.log(product.keys);
 // console.log(Object.keys(product)); // showing key values like items , price
 // console.log(Object.values(product));  // showing values like black , samsung
-console.log(Object.entries(product)); // showing both key and values
+// console.log(Object.entries(product)); // showing both key and values
 
 
 
 
 // map method
- let users = ["arya","abhinand","arjun","abhi"];
- let result=users.map((ele,ind)=>{
+//  let users = ["arya","abhinand","arjun","abhi"];
+//  let result=users.map((ele,ind)=>{
     // console.log("element:",ele);
     // console.log("index:",ind);
     // return ele
-    return ind
+//     return ind
     
     
- })
- console.log("result:",result);
+//  })
+//  console.log("result:",result);
+
+
+
+
+// let student=["rose","arya","lekshmi","avani","sreelekshmi"];
+// for(let m of student){
+//     console.log("student names",":",m);
+// }
+
+
+// let price=[35,45,999,455,300]    // off gives valuess of the array
+// for(let x of price){
+//     console.log("price",":",x);
+// }
+
+// for (let x in price){   // in shows index positioning
+//     console.log(x);   
+    
+// }
+
+// let noice={
+//     name:"abinand H",
+//     id:104,
+//     course:"javascript"
+// }
+// for(let n in noice){
+//     // console.log(n);
+//     // console.log(noise[n]);
+//     console.log("properties",":",noice[n]);
+// }
+
+let prices=[20,40,550,30];
+let result=prices.map((ele,ind,arr)=>{
+    console.log(ele);
+    
+})
+console.log(result); // it shows undefined  because it does not returning any values 
+
