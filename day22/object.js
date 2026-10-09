@@ -342,15 +342,52 @@
 
 
 
-let user=[{name:"arya",hobbies:["comming","struggling","going","thinking"],course:"B tech"},
-{name:"abhi",hobbies:["working","travelling","overthining","driving"],course:"full stack python"},
-{name:"ammu",hobbies:["working proffestional","overthinker","teacher","cooking"],course:"neet"}
+// let user=[{name:"arya",hobbies:["comming","struggling","going","thinking"],course:"B tech"},
+// {name:"abhi",hobbies:["working","travelling","overthining","driving"],course:"full stack python"},
+// {name:"ammu",hobbies:["working proffestional","overthinker","teacher","cooking"],course:"neet"}
 
-]
-let result=user.map((ele)=>{
-    // console.log(ele.hobbies[3]);
-    return ele.hobbies[3]
+// ]
+// let result=user.map((ele)=>{
+//     // console.log(ele.hobbies[3]);
+//     return ele.hobbies[3]
     
-})
-console.log(result);
+// })
+// console.log(result);
 
+
+
+let product=[
+    {
+        id:1,
+        name:"laptop",
+        price:50000,
+        category:{
+            name:"electronics",
+            department:"computer"
+        },
+        reviews:[
+            {user:"ravi",rating:5},
+            {user:"priya",rating:4}
+        ]
+    },
+
+    {
+        id:2,
+        name:"mmouse",
+        price:2300,
+        category:{
+            name:"iit",
+            department:"mech"
+        },
+         reviews:[
+            {user:"abu",rating:7},
+            {user:"haa",rating:6}
+        ]
+    }
+]
+
+product.map((ele)=>{
+    console.log(ele.reviews[1].rating);
+    
+
+})        
