@@ -278,28 +278,78 @@
 
 
 
-let user=[{
-    name:"abu",
-    id:101
-},{
-    name:"abhi",
-    id:102
-},{
-    name:"abhiand",
-    id:104
-},{
-    name:"aby",
-    id:105
-},{
-    name:"unni",
-    id:106
-}]
+// let user=[{
+//     name:"abu",
+//     id:101
+// },{
+//     name:"abhi",
+//     id:102
+// },{
+//     name:"abhiand",
+//     id:104
+// },{
+//     name:"aby",
+//     id:105
+// },{
+//     name:"unni",
+//     id:106
+// }]
 
-let result=user.map((ele)=>{
-    return ele.name;
-    // console.log(ele);
-    // console.log(ele.name);
+// let result=user.map((ele)=>{
+//     return ele.name;
+//     // console.log(ele);
+//     // console.log(ele.name);
     
+    
+// })
+// console.log(result);
+
+
+
+// let data=[{
+//     item:"mobile",
+//     price:50000,
+//     details:{
+//         brand:"OPPO",
+//         color:"white"
+//     }
+// },
+// {
+//     item:"laptop",
+//     price:90000,
+//     details:{
+//         brand:"hp",
+//         color:"grey"
+//     }
+// },
+// {
+//     item:"keyword",
+//     price:20000,
+//     details:{
+//         brand:"lenova",
+//         color:"pink"
+//     }
+// }
+// ]
+
+// data.map((ele)=>{
+//     // console.log(ele.details);
+//     // console.log(ele.details.color);
+//     // console.log(ele.details.brand);
+//     console.log(ele.price);
+// })
+
+
+
+
+let user=[{name:"arya",hobbies:["comming","struggling","going","thinking"],course:"B tech"},
+{name:"abhi",hobbies:["working","travelling","overthining","driving"],course:"full stack python"},
+{name:"ammu",hobbies:["working proffestional","overthinker","teacher","cooking"],course:"neet"}
+
+]
+let result=user.map((ele)=>{
+    // console.log(ele.hobbies[3]);
+    return ele.hobbies[3]
     
 })
 console.log(result);
