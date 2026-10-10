@@ -58,14 +58,57 @@
 
 
 // map method
- let users = ["arya","abhinand","arjun","abhi"];
- let result=users.map((ele,ind)=>{
-    // console.log("element:",ele);
-    // console.log("index:",ind);
-    // return ele
-    return ind
+//  let users = ["arya","abhinand","arjun","abhi"];
+//  let result=users.map((ele,ind)=>{
+//     // console.log("element:",ele);
+//     // console.log("index:",ind);
+//     // return ele
+//     return ind
     
     
- })
- console.log("result:",result);
+//  })
+//  console.log("result:",result);
+
+
+// let emp1=[
+//    {  Ename:"abhinad",
+//       Esalary:50000,
+//       EmId:12334
+//    },
+//    {
+//       Ename:"abhijith",
+//       Esalary:40000,
+//       EmId:16634
+//    },
+//    {
+//       Ename:"alekh",
+//       Esalary:3000,
+//       EmId:109934
+//    }
+// ]
+// let result=emp1.filter((ele)=>{
+//    return ele.Esalary>30000
+// })
+// console.log(result);
+
+
+// result.map((ele)=>{
+//    console.log(ele.Ename);
+//    console.log(ele.Esalary);
+// })
+
+
+
+
+// destructing - it is an efficient way to extract multiple values from an object / array
+// array destructing
+// keyword [var1 , var2 , .....]=Array Name;
  
+
+let names=["unni","kunji","krishnan","aromal","appu","ammu"];
+// let[a,b,c,d,e,,f]=names;
+
+let[a,b,c,f,e,d]=names;
+console.log(f);
+
+
