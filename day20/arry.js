@@ -105,10 +105,13 @@
 // keyword [var1 , var2 , .....]=Array Name;
  
 
-let names=["unni","kunji","krishnan","aromal","appu","ammu"];
-// let[a,b,c,d,e,,f]=names;
+// let names=["unni","kunji","krishnan","aromal","appu","ammu"];
+// // let[a,b,c,d,e,,f]=names;
 
-let[a,b,c,f,e,d]=names;
-console.log(f);
+// let[a,b,c,f,e,d]=names;
+// console.log(f);
 
-
+// object destructuring 
+let details=["kochi",98367,["haa","eee","jaaa"]];
+let[a,b,[x,y,z]]=details;
+console.log("what is fav words:",y);

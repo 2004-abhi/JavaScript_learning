@@ -356,38 +356,59 @@
 
 
 
-let product=[
-    {
-        id:1,
-        name:"laptop",
-        price:50000,
-        category:{
-            name:"electronics",
-            department:"computer"
-        },
-        reviews:[
-            {user:"ravi",rating:5},
-            {user:"priya",rating:4}
-        ]
-    },
+// let product=[
+//     {
+//         id:1,
+//         name:"laptop",
+//         price:50000,
+//         category:{
+//             name:"electronics",
+//             department:"computer"
+//         },
+//         reviews:[
+//             {user:"ravi",rating:5},
+//             {user:"priya",rating:4}
+//         ]
+//     },
 
-    {
-        id:2,
-        name:"mmouse",
-        price:2300,
-        category:{
-            name:"iit",
-            department:"mech"
-        },
-         reviews:[
-            {user:"abu",rating:7},
-            {user:"haa",rating:6}
-        ]
-    }
-]
+//     {
+//         id:2,
+//         name:"mmouse",
+//         price:2300,
+//         category:{
+//             name:"iit",
+//             department:"mech"
+//         },
+//          reviews:[
+//             {user:"abu",rating:7},
+//             {user:"haa",rating:6}
+//         ]
+//     }
+// ]
 
-product.map((ele)=>{
-    console.log(ele.reviews[1].rating);
+// product.map((ele)=>{
+//     console.log(ele.reviews[1].rating);
     
 
-})        
+// })        
+
+
+// // object destructuring 
+// let details=["kochi",98367,["haa","eee","jaaa"]];
+// let[a,b,[x,y,z]]=details;
+// console.log("what is fav words:",y);
+
+
+
+// skipping values
+let numbers=[1,2,3,4,5,6]
+let[first,second,third,,fifth,sixth]=numbers;
+console.log(fifth);
+
+
+let trainers=["Ammu",["unni","appu","aromal"],"krishna"];
+let[a,[trainer1,trainer2,,],c]=trainers;
+console.log(trainer2);
+console.log(trainer3);
+
+
