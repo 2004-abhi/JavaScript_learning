@@ -401,14 +401,22 @@
 
 
 // skipping values
-let numbers=[1,2,3,4,5,6]
-let[first,second,third,,fifth,sixth]=numbers;
-console.log(fifth);
+// let numbers=[1,2,3,4,5,6]
+// let[first,second,third,,fifth,sixth]=numbers;
+// console.log(fifth);
 
 
-let trainers=["Ammu",["unni","appu","aromal"],"krishna"];
-let[a,[trainer1,trainer2,,],c]=trainers;
+// let trainers=["Ammu",["unni","appu","aromal"],"krishna"];
+// let[a,[trainer1,trainer2,,],c]=trainers;
+// console.log(trainer2);
+// console.log(trainer3);
+// console.log("bye bye");
+
+
+
+let trainers=["Ammu",["unni","appu"],"krishna"];
+let[a,[trainer1,trainer2,trainer3],c]=trainers;
 console.log(trainer2);
 console.log(trainer3);
-
+console.log("bye bye");
 
