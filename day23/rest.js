@@ -55,3 +55,24 @@ function f1(){
     console.log(this);//this keyword value will be undefined  
 }
 f1()
+
+
+// arrow function do not have their own THIS keyword
+// it takes this from outer scope
+// (inside outer scope we have window objecr)
+// so it points to window object only...
+let a=()=>{
+    console.log(this);
+    
+}
+a()
+
+let student1={
+    user:"liya",
+    age:22,
+    display:()=>{
+        console.log(this);
+        
+    }
+}
+student1.display()
