@@ -29,50 +29,87 @@
 
 
 
-let student={
-    user:"liya",
-    age:23,
-    display:function liya(){
-        console.log(this);
-        console.log(this.user);    
-    }
+// let student={
+//     user:"liya",
+//     age:23,
+//     display:function liya(){
+//         console.log(this);
+//         console.log(this.user);    
+//     }
 
-}
-student.display()
+// }
+// student.display()
 
 
 // Non - strict mode
-function f1(){
-    console.log(this);  // this  keyword points to window
+// function f1(){
+//     console.log(this);  // this  keyword points to window
     
-}
-f1()
+// }
+// f1()
 
 
 // strict mode
-"use strict"
-function f1(){
-    console.log(this);//this keyword value will be undefined  
-}
-f1()
+// "use strict"
+// function f1(){
+//     console.log(this);//this keyword value will be undefined  
+// }
+// f1()
 
 
 // arrow function do not have their own THIS keyword
 // it takes this from outer scope
 // (inside outer scope we have window objecr)
 // so it points to window object only...
-let a=()=>{
-    console.log(this);
+// let a=()=>{
+//     console.log(this);
     
-}
-a()
+// }
+// a()
 
-let student1={
-    user:"liya",
-    age:22,
-    display:()=>{
-        console.log(this);
+// let student1={
+//     user:"liya",
+//     age:22,
+//     display:()=>{
+//         console.log(this);
+//         console.log(this.age);
+        
+        
+//     }
+// }
+// student1.display()
+
+
+// let sathiya={
+//     subject:"great sql",
+//     age:30,
+//     user:"satiya shelan"
+//     satisfies:function
+// }
+
+
+// 1 bank account - withdraw AND check balance
+// 
+let account={
+    holder:"abhinand",
+    balance:5000,
+    withdraw:function(amount){
+        if (amount <= this.balance){
+            this.balance = this.balance - amount;
+            console.log("withdrawn :" +amount);
+            console.log("remaining balance :" + this.balance);
+            
+        }
+        else {
+            console.log("Insufficent Balance");
+            
+        }
+
+    },
+    showBalance:function(){
+        console.log("balance :" + this.balance);
         
     }
-}
-student1.display()
+
+};
+account.withdraw(1000)
