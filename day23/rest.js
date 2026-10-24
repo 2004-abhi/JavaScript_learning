@@ -90,26 +90,75 @@
 
 // 1 bank account - withdraw AND check balance
 // 
-let account={
-    holder:"abhinand",
-    balance:5000,
-    withdraw:function(amount){
-        if (amount <= this.balance){
-            this.balance = this.balance - amount;
-            console.log("withdrawn :" +amount);
-            console.log("remaining balance :" + this.balance);
+// let account={
+//     holder:"abhinand",
+//     balance:5000,
+//     withdraw:function(amount){
+//         if (amount <= this.balance){
+//             this.balance = this.balance - amount;
+//             console.log("withdrawn :" +amount);
+//             console.log("remaining balance :" + this.balance);
             
-        }
-        else {
-            console.log("Insufficent Balance");
+//         }
+//         else {
+//             console.log("Insufficent Balance");
             
-        }
+//         }
 
-    },
-    showBalance:function(){
-        console.log("balance :" + this.balance);
+//     },
+//     showBalance:function(){
+//         console.log("balance :" + this.balance);
+        
+//     }
+
+// };
+// account.withdraw(1000)
+// account.showBalance()
+
+
+
+// shopping cart - add item and calculate total
+// let cart = {
+//     item:"headphones",
+//     price:1500,
+//     quantity:2,
+//     showTotal:function(){
+//         console.log("Item :" + this.item);
+//         console.log("Total :" + (this.price * this.quantity)); 
+//     }
+// };
+// cart.showTotal()
+
+
+
+// let student = {
+//     name : "abu",
+//     maths  : 80 ,
+//     science : 90,
+//     english : 70,
+//     showResult:function(){
+//         let total = this.maths + this.science + this.english;
+//         let average = total / 3;
+//         console.log("student :"+this.name);
+//         console.log("total marks:" +total);
+//         console.log("average :" +average);  
+//     }
+// };
+// student.showResult();
+
+
+
+// employee salary - calculate yearly salary
+let employee = {
+    name : "Ravi",
+    monthlySalary : 25000,
+    showYearlySalary : function(){
+        let yearlySalary = this.monthlySalary * 12;
+        console.log("employee :" + this.name);
+        console.log("yearly salary :" +yearlySalary);
+        
         
     }
-
+  
 };
-account.withdraw(1000)
+employee.showYearlySalary();
