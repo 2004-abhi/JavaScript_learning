@@ -149,16 +149,125 @@
 
 
 // employee salary - calculate yearly salary
-let employee = {
-    name : "Ravi",
-    monthlySalary : 25000,
-    showYearlySalary : function(){
-        let yearlySalary = this.monthlySalary * 12;
-        console.log("employee :" + this.name);
-        console.log("yearly salary :" +yearlySalary);
+// let employee = {
+//     name : "Ravi",
+//     monthlySalary : 25000,
+//     showYearlySalary : function(){
+//         let yearlySalary = this.monthlySalary * 12;
+//         console.log("employee :" + this.name);
+//         console.log("yearly salary :" +yearlySalary);
         
         
-    }
+//     }
   
-};
-employee.showYearlySalary();
+// };
+// employee.showYearlySalary();
+
+
+
+// call, apply, bind for this keyword
+// this is the problem we use it as multiple times
+
+// let appu={
+//     user:"Abhijith",
+//     course:"Hotel management",
+//     city:"Thuravoor",
+//     display:function showDetails(){
+//         console.log(this.course);
+        
+//     }
+
+// }
+// appu.display()
+
+
+
+// let unni={
+//     user:"Abhinand",
+//     course:"Enginner in cse",
+//     city:"Alapuzha",
+//     display:function showDetails(){
+//         console.log(this.course);
+        
+//     }
+
+// }
+// unni.display()
+
+
+
+// let kunjikili={
+//     user:"archana",
+//     course:"Bio Technology",
+//     city:"Thuravoor",
+//     display:function showDetails(){
+//         console.log(this.course);
+        
+//     }
+
+// }
+// kunjikili.display()
+
+
+
+// solution
+// call(),apply() and bind() --> used to control the value of this
+// inside function.
+
+// call() ---> it invokes/Executes the function immediately.
+//we can specify which object the this keyword should refer to inside the fuction
+
+
+let appu={
+    user:"Abhijith",
+    course:"Hotel management",
+    city:"Thuravoor",
+   
+}
+
+
+
+
+let unni={
+    user:"Abhinand",
+    course:"Enginner in cse",
+    city:"Alapuzha",
+  
+}
+
+
+
+
+let kunjikili={
+    user:"archana",
+    course:"Bio Technology",
+    city:"Thuravoor",
+
+}
+
+function showDetails(father,age){
+    console.log("user name is :",this.user);
+    console.log("course name is :",this.course);
+    console.log("father name is :",father);
+    console.log("age is :",age);
+    
+      
+}
+
+// showDetails.call(unni,"harilal",55)
+// showDetails.call(appu,"binu",56)
+// showDetails.call(kunjikili,"lali",60)
+
+
+// showDetails.apply(unni,["harilal",55])
+// showDetails.apply(appu,["binu",56])
+// showDetails.apply(kunjikili,["lali",60])
+
+
+
+// bind() -->it will not execute the function immediately.
+// it returns  new function with specified object
+// bind()
+let newfunction=showDetails.bind(unni,'soumya',45)
+// let newfunction=showDetails.bind(appu,'joly',48)
+newfunction()
