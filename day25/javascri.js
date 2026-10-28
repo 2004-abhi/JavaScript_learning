@@ -66,6 +66,14 @@ setInterval(()=>{
 
 
 // clock
+console.log("This is Digital Clock");
+// console.log(new Date()); //complete date and time everytime
+
+setInterval(()=>{
+    console.log(new Date().toLocaleString());  //only date and time
+    console.log(new Date().toLocaleTimeString()); // only time
+    console.log(new Date().toLocaleDateString());   
+},1000)
 
 
 
