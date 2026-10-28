@@ -1,0 +1,71 @@
+//Synchronous code 
+console.log("start");
+for(let i=1;i<100;i++){
+    console.log(i);   
+}
+console.log("END");
+
+// in synchronous will execute first and code will execute until the end , so sometimes its show some delay in UI because . 
+// it executes completely then moves to the another so shows delay
+//  this delay problem was solved by asyncronous
+
+
+// Asynchronous code
+console.log("Start");  // synchronous code
+setTimeout(()=>{
+    console.log("Hello EveryOne");
+    
+},5000)
+console.log("End");   // synchronus code
+
+//////
+
+
+console.log("welcome to AbhiBUS");  //synchronous code
+setTimeout(()=>{
+    console.log("Thank you for Booking");
+    console.log("use ABHIRETURN coupon to get 50% Discount");
+},7000)
+console.log("Your booking is in Process...");  //synchronous code
+
+///////
+
+console.log("loading...");
+setTimeout(()=>{
+    console.log("data loaded successfully");
+    
+},3000)
+
+
+// we use setTimeout to delay the excution of code in asyncronous this way we can reduce the imapct 
+// setTimeout (callBackfunction , delaytime);
+
+
+
+///////////
+
+
+
+// asyncronous code (setIntravel)
+
+console.log("Start");
+setInterval(()=>{
+    console.log("This is Asynchronous code");
+    console.log("It will keep on execute after a delay time");   
+},3000)
+console.log("End");
+
+
+// counter
+console.log("time started");
+let count=0;
+setInterval(()=>{
+    count++;
+    console.log("count down :",count);  
+},1000)
+
+
+// clock
+
+
+
