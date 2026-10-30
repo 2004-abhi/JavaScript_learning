@@ -136,28 +136,60 @@
 
 
 // ////
-let foodOder = new Promise((resolve,reject)=>{
-    console.log("placing your food order..");
-    setTimeout(() => {
-        let oderAccepted=false;
-        if (oderAccepted){
-            resolve("your food oder has been accepted")
+// let foodOder = new Promise((resolve,reject)=>{
+//     console.log("placing your food order..");
+//     setTimeout(() => {
+//         let oderAccepted=false;
+//         if (oderAccepted){
+//             resolve("your food oder has been accepted")
+//         }
+//         else{
+//             reject("sry ! your food order has been rejected")
+//         }
+//     },3000);
+    
+// })
+// foodOder.then((message)=>{
+//     console.log(message);
+    
+// })
+// .catch ((error)=>{
+//     console.log(error);
+    
+// })
+// .finally(()=>{
+//     console.log("Promise completed");
+    
+// })
+
+
+
+let bus = new Promise((resolve,reject)=>{
+    console.log("waiting for a bus...");
+    setTimeout(()=>{
+        let busHasArivved=true;
+        if(busHasArivved){
+            resolve({
+                travelles:"Morning star",
+                busNo:"KS2332BG",
+                status:"Arrived"
+            })
         }
-        else{
-            reject("sry ! your food order has been rejected")
+        else {
+            reject("Bus Delay....")
         }
-    },3000);
+    },4000)
     
 })
-foodOder.then((message)=>{
-    console.log(message);
-    
+bus.then((message)=>{
+    console.log(message.travelles);
+    console.log(message.status);
 })
-.catch ((error)=>{
+.catch((error)=>{
     console.log(error);
     
 })
 .finally(()=>{
-    console.log("Promise completed");
+    console.log("Thanku you for using Morning star Travels");
     
 })
