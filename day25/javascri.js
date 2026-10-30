@@ -92,11 +92,42 @@
 
 //counter
 
-let count=0;
-let id=setInterval(()=>{
-    count++ //count=count+1
-    console.log("count down :",count);  // 1 / 2 / 3 / 4 / 5
-    if (count==5){
-        clearInterval(id)
-    }
-},1000)
+// let count=0;
+// let id=setInterval(()=>{
+//     count++ //count=count+1
+//     console.log("count down :",count);  // 1 / 2 / 3 / 4 / 5
+//     if (count==5){
+//         clearInterval(id)
+//     }
+// },1000)
+
+
+
+// //////////////////////////////////////////////
+// what is promise ......?
+// how to create a promise...?
+let payment = new Promise((resolve,reject)=>{
+    console.log("payment processing......");
+    setTimeout(() => {
+        let paymentStatus=true;
+        if(paymentStatus){
+            resolve("payment successful..! Oder confirmed")
+        }
+        else{
+            reject("Payment failed...! plz try later or do it again")
+        }
+        
+    }, 3000);
+    
+})
+
+// How to handle a promise
+
+payment.then((message)=>{
+        console.log(message);
+        
+})
+.catch((reason)=>{
+    console.log(reason);
+    
+})
