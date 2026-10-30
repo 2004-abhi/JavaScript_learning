@@ -106,28 +106,58 @@
 // //////////////////////////////////////////////
 // what is promise ......?
 // how to create a promise...?
-let payment = new Promise((resolve,reject)=>{
-    console.log("payment processing......");
+// let payment = new Promise((resolve,reject)=>{
+//     console.log("payment processing......");
+//     setTimeout(() => {
+//         let paymentStatus=true;
+//         if(paymentStatus){
+//             resolve("payment successful..! Oder confirmed")
+//         }
+//         else{
+//             reject("Payment failed...! plz try later or do it again")
+//         }
+        
+//     }, 3000);
+    
+// })
+
+// // How to handle a promise
+
+// payment.then((message)=>{
+//         console.log(message);
+        
+// })
+// .catch((reason)=>{
+//     console.log(reason);
+    
+// })
+
+
+
+
+// ////
+let foodOder = new Promise((resolve,reject)=>{
+    console.log("placing your food order..");
     setTimeout(() => {
-        let paymentStatus=true;
-        if(paymentStatus){
-            resolve("payment successful..! Oder confirmed")
+        let oderAccepted=false;
+        if (oderAccepted){
+            resolve("your food oder has been accepted")
         }
         else{
-            reject("Payment failed...! plz try later or do it again")
+            reject("sry ! your food order has been rejected")
         }
-        
-    }, 3000);
+    },3000);
     
 })
-
-// How to handle a promise
-
-payment.then((message)=>{
-        console.log(message);
-        
+foodOder.then((message)=>{
+    console.log(message);
+    
 })
-.catch((reason)=>{
-    console.log(reason);
+.catch ((error)=>{
+    console.log(error);
+    
+})
+.finally(()=>{
+    console.log("Promise completed");
     
 })
