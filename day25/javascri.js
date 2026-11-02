@@ -136,19 +136,19 @@
 
 
 // ////
-// let foodOder = new Promise((resolve,reject)=>{
-//     console.log("placing your food order..");
-//     setTimeout(() => {
-//         let oderAccepted=false;
-//         if (oderAccepted){
-//             resolve("your food oder has been accepted")
-//         }
-//         else{
-//             reject("sry ! your food order has been rejected")
-//         }
-//     },3000);
+let foodOder = new Promise((resolve,reject)=>{
+    console.log("placing your food order..");
+    setTimeout(() => {
+        let oderAccepted=false;
+        if (oderAccepted){
+            resolve("your food oder has been accepted")
+        }
+        else{
+            reject("sry ! your food order has been rejected")
+        }
+    },3000);
     
-// })
+})
 // foodOder.then((message)=>{
 //     console.log(message);
     
@@ -161,35 +161,92 @@
 //     console.log("Promise completed");
     
 // })
+async function handlePromise() {
+    try{
+        let result = await foodOder;
+        console.log(result);
+        
+
+    }
+    catch(error){
+        console.log("error :", error);
+        
+    }
+}
+handlePromise()
 
 
 
-let bus = new Promise((resolve,reject)=>{
-    console.log("waiting for a bus...");
-    setTimeout(()=>{
-        let busHasArivved=true;
-        if(busHasArivved){
-            resolve({
-                travelles:"Morning star",
-                busNo:"KS2332BG",
-                status:"Arrived"
-            })
-        }
-        else {
-            reject("Bus Delay....")
-        }
-    },4000)
+// let bus = new Promise((resolve,reject)=>{
+//     console.log("waiting for a bus...");
+//     setTimeout(()=>{
+//         let busHasArivved=true;
+//         if(busHasArivved){
+//             resolve({
+//                 travelles:"Morning star",
+//                 busNo:"KS2332BG",
+//                 status:"Arrived"
+//             })
+//         }
+//         else {
+//             reject("Bus Delay....")
+//         }
+//     },4000)
     
-})
-bus.then((message)=>{
-    console.log(message.travelles);
-    console.log(message.status);
-})
-.catch((error)=>{
-    console.log(error);
+// })
+// bus.then((message)=>{
+//     console.log(message.travelles);
+//     console.log(message.status);
+// })
+// .catch((error)=>{
+//     console.log(error);
     
-})
-.finally(()=>{
-    console.log("Thanku you for using Morning star Travels");
+// })
+// .finally(()=>{
+//     console.log("Thanku you for using Morning star Travels");
     
-})
+// })
+
+// instead of then , catch , finally we using new features
+// async and await these are javascript features
+// it makes asynchronous code easier to write and read
+// The await keyword in JavaScript is used to pause the execution of an asynchronous function 
+// until a Promise settles (either fulfills or rejects).
+
+
+
+// async function handlePromise() {
+//     try{
+//         let result = await bus;
+//         console.log(result);
+//         console.log(result.busNo);    
+//     }
+//     catch (error){
+//         console.log(error);
+//     }
+    
+// }
+// handlePromise()
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// waht is JSON?
+// JSON - javascript object notation
+// it is a format used to store or send the data between client (frontend) and server (backend) 
+// we have 2 methods
+// 1. JSON.stringify() - it convert - javascript object to json
+// 2. JSON.parse() - it convert - JSON to javascript object
+
+// when you fetch the data from the server it will give json format ,
+//  so we want to understand the data we use to convert it into javascript object
+
+let student= {
+    name :"abhinand ",
+    isActive:true,
+    hasGirlfriend : 0
+
+
+}
+
+let x=JSON.stringify(student)
+console.log(x);  //json data
