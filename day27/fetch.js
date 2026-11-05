@@ -21,26 +21,157 @@
 
 
 
-let promise1=fetch("https://fakestoreapi.com/products")
-promise1.then((response)=>{
-    let promise2 = response.json()
-    promise2.then((value)=>{
-        // console.log(value);  // giving full 20 object array
+// let promise1=fetch("https://fakestoreapi.com/products")
+// promise1.then((response)=>{
+//     let promise2 = response.json()
+//     promise2.then((value)=>{
+//         // console.log(value);  // giving full 20 object array
 
-        value.forEach((ele)=>{
-            console.log(ele);   //giving 20 objects
-            console.log("product id:",ele.id);
-            console.log("category :",ele.category);
-            console.log("price :",ele.price);
-            console.log(ele.rating);  // rating object{}
-            console.log("Rating :",ele.rating.rate); 
-        })
+//         value.forEach((ele)=>{
+//             console.log(ele);   //giving 20 objects
+//             console.log("product id:",ele.id);
+//             console.log("category :",ele.category);
+//             console.log("price :",ele.price);
+//             console.log(ele.rating);  // rating object{}
+//             console.log("Rating :",ele.rating.rate); 
+//         })
      
-    })
-})
+//     })
+// })
 
-.catch((reason)=>{
-    console.log(reason);
+// .catch((reason)=>{
+//     console.log(reason);
     
 
+// })
+
+
+// let promise1 = fetch("https://fakestoreapi.com/carts")
+// promise1.then((response)=>{
+//     let promise2 = response.json()
+//     promise2.then((value)=>{
+//         // console.log(value);
+//         value.forEach((ele)=>{
+//             console.log(ele);
+//             console.log("USER id :",ele.userId);
+//             ele.products.forEach((products)=>{
+//                 console.log("product id :",ele.productID);
+//                 console.log("quantity : ",ele.products.quantity);
+
+//             })
+          
+            
+            
+//         })
+//     })
+// })
+// .catch((reason)=>{
+//     console.log(reason)})
+
+
+
+//     let promise1 = fetch("https://fakestoreapi.com/carts");
+
+// promise1.then((response) => {
+
+//     let promise2 = response.json();
+
+//     promise2.then((value) => {
+
+//         value.forEach((ele) => {
+
+//             console.log("USER ID:", ele.userId);
+
+//             ele.products.forEach((products) => {
+
+//                 console.log("PRODUCT ID:", products.productId);
+
+//                 console.log("QUANTITY:", products.quantity);
+
+//             });
+
+//             console.log("----------------------");
+
+//         });
+
+//     });
+
+// }).catch((reason) => {
+//     console.log(reason);
+// });
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+// how to send data to the server
+
+
+// sending new data
+// let promise1=fetch("https://jsonplaceholder.typicode.com/posts",{
+//     method:"POST",
+//     headers:{
+//         "Content-Type": "application/json"
+//     },
+//     body:JSON.stringify({
+//         name : "Abhinand H",
+//         course : "React"
+//     })
+// })
+// promise1.then((response)=>{
+//     let promise2=response.json()
+//     promise2.then((value)=>{
+//         console.log(value);
+        
+//     })
+// })
+// .catch((error)=>{
+//     console.log(error);
+    
+// })
+
+
+
+//updating the existing data
+// let promise1=fetch("https://jsonplaceholder.typicode.com/posts",{
+//     method:"PUT",
+//     headers:{
+//         "Content-Type": "application/json"
+//     },
+//     body:JSON.stringify({
+//         title : "KOchi Students",
+//         body : "Javascript is going to end"
+//     })
+// })
+// promise1.then((response)=>{
+//     let promise2=response.json()
+//     promise2.then((value)=>{
+//         console.log(value);
+        
+//     })
+// })
+// .catch((error)=>{
+//     console.log(error);
+    
+// })
+
+
+
+//deleting existing data
+let promise1=fetch("https://jsonplaceholder.typicode.com/posts/5",{
+    method:"DELETE", 
+})
+
+promise1.then((response)=>{
+    let promise2=response.json()
+    promise2.then((value)=>{
+        console.log(value);
+        
+    })
+})
+.catch((error)=>{
+    console.log(error);
+    
 })
