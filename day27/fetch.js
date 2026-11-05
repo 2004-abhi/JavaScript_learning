@@ -160,18 +160,60 @@
 
 
 //deleting existing data
-let promise1=fetch("https://jsonplaceholder.typicode.com/posts/5",{
-    method:"DELETE", 
-})
+// let promise1=fetch("https://jsonplaceholder.typicode.com/posts/5",{
+//     method:"DELETE", 
+// })
 
-promise1.then((response)=>{
-    let promise2=response.json()
-    promise2.then((value)=>{
-        console.log(value);
+// promise1.then((response)=>{
+//     let promise2=response.json()
+//     promise2.then((value)=>{
+//         console.log(value);
         
-    })
-})
-.catch((error)=>{
-    console.log(error);
+//     })
+// })
+// .catch((error)=>{
+//     console.log(error);
     
+// })
+
+
+//get the data
+// let promise1=fetch("https://api.tvmaze.com/singlesearch/shows?q=girls")
+// promise1.then((response)=>{
+//     let promise2 = response.json()
+//     promise2.then((value)=>{
+//         // console.log(value);  // giving full 20 object array
+
+//         value.forEach((ele)=>{
+//             console.log(ele);   //giving 20 objects
+             
+//         })
+     
+//     })
+// })
+
+// .catch((reason)=>{
+//     console.log(reason);
+
+
+
+    // Get data from server
+let promise1 = fetch("https://api.tvmaze.com/singlesearch/shows?q=girls");
+
+promise1.then((response) => {
+    let promise2 = response.json();
+    promise2.then((value) => {
+
+        console.log(value);
+
+        console.log("Show Name:", value.type);
+        console.log("time:", value.schedule.time);
+        console.log("Status:", value.status);
+        console.log("days:", value.schedule.days);
+
+    });
+
 })
+.catch((reason) => {
+    console.log(reason);
+});
