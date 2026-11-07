@@ -23,19 +23,19 @@
 
 
 
-let h2= document.querySelector("h2")
-let h1 = document.querySelectorAll(".a")
-let h3 = document.querySelector("#head")
-console.log(h2);
-console.log(h1);
-console.log(h1[2]);
+// let h2= document.querySelector("h2")
+// let h1 = document.querySelectorAll(".a")
+// let h3 = document.querySelector("#head")
+// console.log(h2);
+// console.log(h1);
+// console.log(h1[2]);
 
-let hw = document.querySelectorAll("h2")
-hw.forEach((ele,ind)=>{
-    console.log(ind);
-    console.log(ele);
+// let hw = document.querySelectorAll("h2")
+// hw.forEach((ele,ind)=>{
+//     console.log(ind);
+//     console.log(ele);
     
     
-})
+// })
 
 
