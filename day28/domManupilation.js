@@ -31,16 +31,30 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
-let div=document.getElementById("Box")
-// console.log(div.innerText);
-// it returns only visible content
+// let div=document.getElementById("Box")
+// // console.log(div.innerText);
+// // it returns only visible content
 
 
-// getting the content using textContent
-console.log(div.textContent);
-// //changing content using textContent
-div.textContent="miss you machuuussssssss"
+// // getting the content using textContent
+// console.log(div.textContent);
+// // //changing content using textContent
+// div.textContent="miss you machuuussssssss"
 
 //it returns all the content including the hide content also
 
 
+
+
+//////////////////////////////////
+// chnaging or adding style using javascript
+
+let h1=document.getElementById("company")
+function victims(){
+    h1.innerText="Testyantra...😴"
+    h1.style.color="orange";
+    h1.style.fontSize="30px";
+    h1.style.fontStyle="italic";
+    h1.style.backgroundColor="black"
+    // alert("Hello victims how are you.....")
+}
