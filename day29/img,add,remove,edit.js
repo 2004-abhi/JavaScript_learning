@@ -80,9 +80,23 @@
 
 // display in interface 
 
-let input=document.getElementById("x")
-input.addEventListener("input",()=>{
-    let p=document.getElementById("p")
-    p.innerText="User Typing : "+input.value;
+// let input=document.getElementById("x")
+// input.addEventListener("input",()=>{
+//     let p=document.getElementById("p")
+//     p.innerText="User Typing : "+input.value;
   
+// })
+
+
+
+////////////////
+let input=document.getElementById("x")
+let form=document.getElementById("myform")
+form.addEventListener("submit",(Event)=>{
+    //it stops browser default behaviour (page reload)
+    event.preventDefault()
+    console.log(input.value);
+    console.log("form submitted");
+    
+    
 })
