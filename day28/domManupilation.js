@@ -49,12 +49,61 @@
 //////////////////////////////////
 // chnaging or adding style using javascript
 
-let h1=document.getElementById("company")
-function victims(){
-    h1.innerText="Testyantra...😴"
-    h1.style.color="orange";
-    h1.style.fontSize="30px";
-    h1.style.fontStyle="italic";
-    h1.style.backgroundColor="black"
-    // alert("Hello victims how are you.....")
-}
+// let h1=document.getElementById("company")
+// function victims(){
+//     h1.innerText="Testyantra...😴"
+//     h1.style.color="orange";
+//     h1.style.fontSize="30px";
+//     h1.style.fontStyle="italic";
+//     h1.style.backgroundColor="black"
+//     // alert("Hello victims how are you.....")
+// }
+
+
+//////////////
+// adding , removing , toggle 
+
+// let h1=document.getElementsByTagName("h1")
+// console.log(h1[0]);
+// h1[0].classList.add("x")  // adding
+// console.log([0]);
+
+// h1[0].classList.remove("x")   // removing
+// console.log(h1[0]);
+
+// h1[0].classList.toggle("x") // toggle
+// // if class is present it removes , if not present it will add
+// console.log(h1[0]);
+
+
+
+// function f1(){
+//     let body=document.getElementsByTagName("body")
+//     // console.log(body[0]);
+//      body[0].classList.toggle("x")
+    
+// }
+
+
+
+///////////////////////////////////////////////////////////////////////////
+// CreateElement  and remove element
+
+// let p=document.createElement("p")
+// // console.log(p);
+// p.innerText="lunch time"
+// console.log(p);
+// // Inserting Inside the Body
+// document.body.append(p,"m16 batch")
+// document.body.appendChild(p,"m16 batch")
+
+
+
+// let div=document.getElementById("container")
+// let i=document.createElement("i")
+// i.innerText="mahaguru institute of technology";
+// // inserting inside the div
+// div.append(i)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
