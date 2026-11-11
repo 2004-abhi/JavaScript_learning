@@ -90,13 +90,30 @@
 
 
 ////////////////
-let input=document.getElementById("x")
-let form=document.getElementById("myform")
-form.addEventListener("submit",(Event)=>{
-    //it stops browser default behaviour (page reload)
-    event.preventDefault()
-    console.log(input.value);
-    console.log("form submitted");
+// let input=document.getElementById("x")
+// let form=document.getElementById("myform")
+// form.addEventListener("submit",(Event)=>{
+//     //it stops browser default behaviour (page reload)
+//     event.preventDefault()
+//     console.log(input.value);
+//     console.log("form submitted");
     
     
-})
+// })
+
+
+
+////////////////////////////////////////
+// create an section , paragraph , spam in the javascript without writting any html code 
+// usiing createElement and append()
+let src=document.createElement("section")
+let p=document.createElement("p")
+let x=document.createElement("span")
+// console.log(p);
+p.innerHTML="Testyantra"
+x.innerHTML="Qspiders"
+
+src.append(p)
+src.append(x)
+document.body.append(src);
+
