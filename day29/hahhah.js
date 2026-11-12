@@ -124,14 +124,14 @@
 // InLine event Handling
 // (writing the event directly inside the html element)
 // note : we cannot use same event multiple times
-function f1(){
-    console.log("Ticket Booked Successfully !.....");
+// function f1(){
+//     console.log("Ticket Booked Successfully !.....");
     
-}
-function f2(){
-    console.log("payment Successful");
+// }
+// function f2(){
+//     console.log("payment Successful");
     
-}
+// }
 // only the first f1()  will execte only . we cannot use more function in inline only one funtion 
 
 
@@ -140,34 +140,132 @@ function f2(){
 // Dom event properties
 // note : we cannot use same event multiples times, but
 // if you try to use , it takes only latest one 
-let btn=document.getElementById("btn")
-btn.onclick=function(){
-    console.log("Added to cart successfully");
+// let btn=document.getElementById("btn")
+// btn.onclick=function(){
+//     console.log("Added to cart successfully");
     
-}
-btn=onclick=function(){
-    console.log("Item is not available");
+// }
+// btn=onclick=function(){
+//     console.log("Item is not available");
     
-}
-btn=onclick=function(){
-    console.log("usiing Dom event properties , it take latest one");
+// }
+// btn=onclick=function(){
+//     console.log("usiing Dom event properties , it take latest one");
     
-}
+// }
 
 
 
 ////////////////////////////////
 // addEventListener
-let btn=document.getElementById("btn")
-btn.addEventListener("click",()=>{
-    console.log("Course Entrolled Successfully");
+// let btn=document.getElementById("btn")
+// btn.addEventListener("click",()=>{
+//     console.log("Course Entrolled Successfully");
     
-})
-btn.addEventListener("click",()=>{
-    console.log("please pay 35000 for course");
+// })
+// btn.addEventListener("click",()=>{
+//     console.log("please pay 35000 for course");
     
-})
-btn.addEventListener("Click",()=>{
-    console.log("Tank you for joining in great Testyantra");
+// })
+// btn.addEventListener("Click",()=>{
+//     console.log("Tank you for joining in great Testyantra");
+    
+// })
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// event object
+
+// let btn=document.getElementById("x")
+// btn.addEventListener("click",(event)=>{
+//     console.log(event);
+//     console.log(event.type);
+//     console.log(event.target);
+//     console.log(event.target.tagName);
+    
+// })
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// event propagation
+// in javascript is a mechanisum . it defines how and event travels through the Dom .
+// we have 3 phases 
+// 1. Capturing phase 
+// 2. target phase
+// 3. Bubling phase
+// 
+
+let parent=document.getElementById("p")
+let child=document.getElementById("c")
+let grandChild=document.getElementById("gc")
+
+// parent.addEventListener("clicked",()=>{
+//     console.log("parent clicked");
+    
+// })
+
+// child.addEventListener("click",()=>{
+//     console.log("Child Clicked");
+    
+// })
+
+// grandChild.addEventListener("Click",()=>{
+//     console.log("Grand Child Clicked");
+    
+// })
+
+
+////////////////////////////////////////
+// parent.addEventListener("clicked",()=>{
+//     console.log("parent clicked");
+    
+// })
+
+// child.addEventListener("click",()=>{
+//     console.log("Child Clicked");
+    
+// })
+
+// grandChild.addEventListener("Click",(event)=>{
+//     event.stopPropagation()
+//     console.log("Grand Child Clicked");
+    
+// })
+
+////////////////////////////////////////////////////
+// parent.addEventListener("click",()=>{
+//     console.log("parent clicked");
+    
+// })
+
+// child.addEventListener("click",(event)=>{
+//     event.stopPropagation()
+//     console.log("Child Clicked");
+    
+// })
+
+// grandChild.addEventListener("click",(event)=>{
+//     event.stopPropagation()
+//     console.log("Grand Child Clicked");
+    
+// })
+/////////////////////////////////////////////
+// if you want to see capturing phase we have to use 3rd argument as true
+
+parent.addEventListener("click",()=>{
+    console.log("Parent Clicked");
+    
+},true)
+
+child.addEventListener("click",()=>{
+    console.log("Child Clicked");
+    
+},true)
+
+grandChild.addEventListener("click",()=>{
+    console.log("grand child clicked");
     
 })

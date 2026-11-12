@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #hen{
+        /* #hen{
             border: 2px solid grey;
             width: 100px;
             padding: 30px;
             color: red;
+        } */
+        #p{
+            border : 2px solid grey;
+            width : 200px;
+            padding: 30px;
+            background-color: yellow;
+        }
+
+        #c{
+            width: 100px;
+            background-color: aquamarine;
+            padding: 20px;
+            color: blue;
+
         }
     </style>
 </head>
@@ -46,7 +60,23 @@
 
 
 <!-- addEventListener -->
- <button id="btn">Entroll COURSE</button>
-    <script src="./img,add,remove,edit.js"></script>
+ <!-- <button id="btn">Entroll COURSE</button> -->
+
+
+ <!-- event object -->
+  <!-- <button id="x"> Follow</button>
+  <button>Like</button> -->
+
+
+  <!-- event propagation -->
+   <div id="p">
+    parent
+    <div id="c">
+        child
+        <button id="gc">Grand Child</button>
+    </div>
+
+   </div>
+    <script src="./hahhah.js"></script>
 </body>
 </html>
