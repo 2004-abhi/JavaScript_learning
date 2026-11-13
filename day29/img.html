@@ -11,7 +11,7 @@
             padding: 30px;
             color: red;
         } */
-        #p{
+        /* #p{
             border : 2px solid grey;
             width : 200px;
             padding: 30px;
@@ -24,6 +24,19 @@
             padding: 20px;
             color: blue;
 
+        } */
+
+        #product{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .product{
+            border: 1px solid grey;
+            width: 150px;
+            text-align: center;
+            padding: 8px;
         }
     </style>
 </head>
@@ -69,14 +82,47 @@
 
 
   <!-- event propagation -->
-   <div id="p">
+   <!-- <div id="p">
     parent
     <div id="c">
         child
         <button id="gc">Grand Child</button>
     </div>
 
-   </div>
+   </div> -->
+
+
+   <!-- dom traversing -->
+    <!-- <div id="product">
+        <h1 id="hh">HeadPhones</h1>
+        <p id="pp">&#8377; 3500</p>
+        <button id="btn">Add to Cart</button>
+    </div> -->
+
+
+    <!-- ////////////////////////////////////////////////// -->
+<!-- event deligation -->
+ <div id="product">
+    <div class="product">
+        <h2>Watch</h2>
+        <p id="price1">&#8377;7000</p>
+        <button id="btn1">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h2 >Mobile</h2>
+        <p id="price2">&#8377;15000</p>
+        <button id="btn2">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+        <h2>shoes</h2>
+        <p id="price3">&#8377;9000</p>
+        <button id="btn3">Add to Cart</button>
+
+    </div>
+</div>
     <script src="./hahhah.js"></script>
 </body>
 </html>

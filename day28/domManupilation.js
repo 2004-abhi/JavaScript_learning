@@ -98,6 +98,9 @@
 // document.body.appendChild(p,"m16 batch")
 
 
+// append -> add mltiple element in a single call
+// appendChild -> add single element in a call
+// createElement -> it used create an element in an html element || document.createElement("")
 
 // let div=document.getElementById("container")
 // let i=document.createElement("i")

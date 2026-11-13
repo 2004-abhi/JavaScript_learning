@@ -198,9 +198,13 @@
 // 3. Bubling phase
 // 
 
-let parent=document.getElementById("p")
-let child=document.getElementById("c")
-let grandChild=document.getElementById("gc")
+
+
+// this is the manin code wriiten are sub
+
+// let parent=document.getElementById("p")
+// let child=document.getElementById("c")
+// let grandChild=document.getElementById("gc")
 
 // parent.addEventListener("clicked",()=>{
 //     console.log("parent clicked");
@@ -255,17 +259,65 @@ let grandChild=document.getElementById("gc")
 /////////////////////////////////////////////
 // if you want to see capturing phase we have to use 3rd argument as true
 
-parent.addEventListener("click",()=>{
-    console.log("Parent Clicked");
+// parent.addEventListener("click",()=>{
+//     console.log("Parent Clicked");
     
-},true)
+// },true)
 
-child.addEventListener("click",()=>{
-    console.log("Child Clicked");
+// child.addEventListener("click",()=>{
+//     console.log("Child Clicked");
     
-},true)
+// },true)
 
-grandChild.addEventListener("click",()=>{
-    console.log("grand child clicked");
+// grandChild.addEventListener("click",()=>{
+//     console.log("grand child clicked");
     
+// })
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// dom traveresing
+// it is a process of moving
+// from one element to another related elements
+
+
+// let parent=document.getElementById("product")
+// console.log(parent);
+// console.log(parent.children);
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+
+
+// let price=document.getElementById("pp")
+// console.log(price);
+// // console.log(price.parentElement);
+// console.log(price.previousElementSibling);
+// console.log(price.nextElementSibling);
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// event deligation
+
+// without event deligation
+let btn1=document.getElementById("btn1")
+let btn2=document.getElementById("btn2")
+let btn3=document.getElementById("btn3")
+
+btn1.addEventListener("click",()=>{
+    let price1=document.getElementById("price1")
+    alert(`Add to cart: ${price1.previousElementSibling.innerHtml}`);
+
+})
+btn2.addEventListener("click",()=>{
+    let price2=document.getElementById("price2")
+    alert(`Add to cart: ${price2.previousElementSibling.innerHtml}`)
+
+})
+btn3.addEventListener("click",()=>{
+    let price3=document.getElementById("price3")
+    alert(`Add to cart: ${price3.previousElementSibling.innerHtml}`)
+
 })
